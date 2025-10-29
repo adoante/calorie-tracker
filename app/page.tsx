@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { HamburgerIcon } from "@phosphor-icons/react/dist/ssr"
+import { HamburgerIcon, HashIcon, SparkleIcon } from "@phosphor-icons/react/dist/ssr"
 import Image from "next/image"
 import {
 	Card,
@@ -9,6 +9,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card"
+import { CirclePoundSterlingIcon } from "lucide-react"
 
 export default function Home() {
 	return (
@@ -61,21 +62,27 @@ export default function Home() {
 				{[
 					{
 						title: "Track Calories",
-						desc: "Easily log what you eat and see where your calories go.",
+						desc: "Lorem ipsum dolor sit amet",
+						icon: <HamburgerIcon size={28} className="text-emerald-500" />,
+						content: ""
 					},
 					{
-						title: "Smart Meal Counter",
-						desc: "Get instant feedback on portion sizes and macros.",
+						title: "Streak Counter",
+						desc: "Lorem ipsum dolor sit amet",
+						icon: <HashIcon size={32} className="text-emerald-500" />,
+						content: ""
 					},
 					{
 						title: "Get Help from AI",
-						desc: "Ask nutrition questions and get real advice powered by AI.",
+						desc: "Lorem ipsum dolor sit amet",
+						icon: <SparkleIcon size={32} className="text-emerald-500" />,
+						content: ""
 					},
 				].map((item, i) => (
 					<Card key={i} className="bg-white border border-zinc-200 shadow-sm hover:shadow-md transition-shadow">
 						<CardHeader>
 							<CardTitle className="flex flex-row items-center gap-4">
-								<HamburgerIcon size={28} className="text-emerald-500" />
+								{item.icon}
 								{item.title}
 							</CardTitle>
 							<CardDescription className="text-zinc-600">
