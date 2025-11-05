@@ -58,7 +58,6 @@ export default function Home() {
 						/>
 						<Button
 							className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium"
-							onClick={handleSubmit}
 						>
 							Join Waitlist
 						</Button>
