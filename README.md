@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Docs and resources
 
-## Getting Started
+### General
+**Docs**
+- [Dev Docs](https://devdocs.io/) - Combines multiple API documentations in a fast, organized, and searchable interface.
 
-First, run the development server:
+### React
+**Official Docs**
+- [React.dev (official)](https://react.dev) — Modern React documentation, hooks, patterns, and best practices.  
+- [React TypeScript Cheatsheets](https://react-typescript-cheatsheet.netlify.app/) — Go-to guide for typing React components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Next.js
+**Official Docs**
+- [Next.js Documentation](https://nextjs.org/docs) — Pages, routing, API routes, data fetching, and more.  
+- [Learn Next.js](https://nextjs.org/learn) — Interactive tutorial from Vercel.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### shadcn/ui
+**Official Docs**
+- [shadcn/ui Docs](https://ui.shadcn.com) — Installation, components, and customization guides.  
+- [Component Registry](https://ui.shadcn.com/docs/components) — Browse reusable, accessible UI components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Tailwind CSS
+**Official Docs**
+- [Tailwind CSS Docs](https://tailwindcss.com/docs) — Utility classes, responsive design, and customization.  
+- [Tailwind Play](https://play.tailwindcss.com/) — Online sandbox for testing Tailwind code.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Resources**
+- [Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet) - One to one TailWindCSS and CSS equivalents
 
-## Learn More
+### npm
+**Official Docs**
+- [npm Docs](https://docs.npmjs.com/) — Managing dependencies, scripts, and publishing packages.  
+- [npm Registry](https://www.npmjs.com/) — Search for public packages.
 
-To learn more about Next.js, take a look at the following resources:
+**Tips**
+- `npm install <pkg>` — Install dependencies  
+- `npm run dev` — Run development scripts  
+- `npm outdated` / `npm update` — Manage package versions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Node.js
+**Official Docs**
+- [Node.js Docs](https://nodejs.org/en/docs) — Core API reference.  
+- [Node.js Guides](https://nodejs.dev/en/learn/) — Learn Node.js fundamentals interactively.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### TypeScript
+**Official Docs**
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html) — Core language reference.
 
-## Deploy on Vercel
+### Supabase
+**Offical Docs**
+- [Supabase Docs](https://supabase.com/docs) — Postgres backend, auth, storage, and edge functions.
+- [Supabase JS Client](https://supabase.com/docs/reference/javascript/introduction) - Interact with Supabase from frontend or backend.
+- [Supabase Database Docs](https://supabase.com/docs/guides/database/overview) — Using Postgres in Supabase: schema, tables, and SQL editor.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### PostgreSQL
+**Offical Docs**
+- [PostgreSQL Docs](https://www.postgresql.org/docs/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Resources**
+- [SQL Cheat Sheet](https://devtoolcafe.com/tools/sql-cheatsheet)
