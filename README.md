@@ -5,25 +5,21 @@
 - [Dev Docs](https://devdocs.io/) - Combines multiple API documentations in a fast, organized, and searchable interface.
 
 ## React
----
 **Official Docs**
 - [React.dev (official)](https://react.dev) — Modern React documentation, hooks, patterns, and best practices.  
 - [React TypeScript Cheatsheets](https://react-typescript-cheatsheet.netlify.app/) — Go-to guide for typing React components.
 
 ## Next.js
----
 **Official Docs**
 - [Next.js Documentation](https://nextjs.org/docs) — Pages, routing, API routes, data fetching, and more.  
 - [Learn Next.js](https://nextjs.org/learn) — Interactive tutorial from Vercel.
 
 ## shadcn/ui
----
 **Official Docs**
 - [shadcn/ui Docs](https://ui.shadcn.com) — Installation, components, and customization guides.  
 - [Component Registry](https://ui.shadcn.com/docs/components) — Browse reusable, accessible UI components.
 
 ## Tailwind CSS
----
 **Official Docs**
 - [Tailwind CSS Docs](https://tailwindcss.com/docs) — Utility classes, responsive design, and customization.  
 - [Tailwind Play](https://play.tailwindcss.com/) — Online sandbox for testing Tailwind code.
@@ -32,7 +28,6 @@
 - [Tailwind Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet) - One to one TailWindCSS and CSS equivalents
 
 ## npm
----
 **Official Docs**
 - [npm Docs](https://docs.npmjs.com/) — Managing dependencies, scripts, and publishing packages.  
 - [npm Registry](https://www.npmjs.com/) — Search for public packages.
