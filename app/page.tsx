@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { HamburgerIcon, HashIcon, SparkleIcon } from "@phosphor-icons/react/dist/ssr"
@@ -9,9 +11,18 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card"
-import { CirclePoundSterlingIcon } from "lucide-react"
+import { useState } from "react"
 
 export default function Home() {
+	const [waitlistEmail, setWaitlistEmail] = useState("")
+
+	const handleSubmit = async () => {
+		await fetch(`/api/waitlist?email=${waitlistEmail}`, {
+			method: "POST",
+		})
+
+	}
+
 	return (
 		<main className="flex flex-col space-y-16 py-12 px-6 md:px-12 bg-zinc-50 text-zinc-900">
 			{/* Navbar */}
@@ -36,16 +47,22 @@ export default function Home() {
 						Track your calories, stay on top of your goals, and see real progress.
 					</h3>
 
-					<div className="flex flex-col sm:flex-row gap-4">
+					<form className="flex flex-col sm:flex-row gap-4" onSubmit={handleSubmit}>
 						<Input
 							type="email"
 							placeholder="Enter your email"
 							className="bg-white border-zinc-200"
+							required
+							value={waitlistEmail}
+							onChange={(e) => setWaitlistEmail(e.target.value)}
 						/>
-						<Button className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium">
+						<Button
+							className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium"
+							onClick={handleSubmit}
+						>
 							Join Waitlist
 						</Button>
-					</div>
+					</form>
 				</div>
 
 				<Image
