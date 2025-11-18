@@ -6,6 +6,7 @@ import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
@@ -45,6 +46,8 @@ const mockWeeklySummary: WeeklySummary = {
         { date: "2025-11-16", totalCalories: 2500 },
     ],
 }
+
+const averageCalories: number = Math.ceil(mockWeeklySummary.days.reduce((acc, day) => acc + day.totalCalories, 0) / 7)
 
 const chartData = mockWeeklySummary.days.map((day) => ({
     date: day.date,
@@ -105,6 +108,11 @@ export function WeeklyCaloriesBarChart() {
                     </BarChart>
                 </ChartContainer>
             </CardContent>
+            <CardFooter className="flex-col gap-2 text-sm">
+                <div className="flex items-center gap-2 leading-none font-medium">
+                    Average Calories are {averageCalories}
+                </div>
+            </CardFooter>
         </Card>
     )
 }
